@@ -580,6 +580,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .col-span-10 {
   grid-column: span 10 / span 10;
 }
@@ -631,6 +635,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .bg-\[green\] {
