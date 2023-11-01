@@ -16,12 +16,12 @@
     <body>
     <div class="header-main w-full">
       <div class="container mx-auto grid grid-cols-12 py-3">
-        <div class="branding col-span-2 lg:col-span-3 2xl:col-span-6 grid items-center">
+        <div class="branding col-span-2 grid items-center">
            <a href="https://phpwine.github.io/documents/">
               <img src="./img/wine.jpg" alt="PHPwine">
            </a>
         </div>
-        <div class="menu-list hidden lg:grid col-span-10 lg:col-span-9 2xl:col-span-6 items-center justify-items-end">
+        <div class="menu-list hidden xl:grid col-span-10 items-center justify-items-end">
           <ul>
             <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/services.html">Services</a></li> 
             <li class="p-3" id="author"><a href="https://phpwine.github.io/documents/about.html">About</a></li>
@@ -35,7 +35,7 @@
 
     <div class="w-full">
       <div class="container mx-auto grid grid-cols-12 gap-5">
-        <div id="sidebar" class="col-span-3">
+        <div id="sidebar" class="col-span-3 hidden xl:grid">
           <div id="wsrch"> 
           <input id="wineInput" type="text" placeholder="Search..">
           </div>
@@ -219,7 +219,7 @@
             </tbody>
           </table>
         </div>
-        <div id="main_content" class="col-span-9">Content</div>
+        <div id="main_content" class="col-span-12 lg:col-span-9">Content</div>
       </div>
       
     </div>    
