@@ -1,1 +1,0 @@
-(()=>{"use strict";jQuery(document).ready((function(){jQuery("#wineInput").on("keyup",(function(){var e=jQuery(this).val().toLowerCase();jQuery("#wineMethods tr").filter((function(){jQuery(this).toggle(jQuery(this).text().toLowerCase().indexOf(e)>-1)}))}))}))})();
