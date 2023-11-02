@@ -1,432 +1,900 @@
 <!DOCTYPE html class="scroll-smooth">
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PHPWine Documents</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,500;8..60,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="dist/style.f06a43761c86885080d8.css">
-        <link rel="stylesheet" href="dist/output.css">
-
-    </head>
-    <body>
-    <div class="header-main w-full">
-      <div class="container mx-auto grid grid-cols-12 py-3">
-        <div class="branding col-span-2 grid items-center">
-           <a href="https://phpwine.github.io/documents/">
-              <img src="./img/wine.jpg" alt="PHPwine">
-           </a>
-        </div>
-        <div class="menu-list-mobile xl:hidden grid col-span-10 items-center justify-items-end">
-          <span class="btn-plus text-[40px] leading-[25px]">&#43;</span>
-        </div>
-        <div class="menu-list hidden xl:grid col-span-10 items-center justify-items-end">
-          <ul>
-            <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/services.html">Services</a></li> 
-            <li class="p-3" id="author"><a href="https://phpwine.github.io/documents/about.html">About</a></li>
-            <li class="p-3" id="author"><a href="https://phpwine.wordpress.com/">Blog</a></li>
-            <li class="p-3"><a href="https://github.com/PHPWine/PHPWine/issues/new">Submit Bug</a></li>
-            <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/send-me-a-gift.html">Buy me coffee?</a></li> 
-          </ul> 
-        </div>
-      </div>
-    </div>
-
-    <div class="w-full">
-      <div class="container mx-auto grid grid-cols-12 gap-5">
-        <div id="sidebar" class="col-span-3 hidden xl:grid">
-          <div id="wsrch"> 
-          <input id="wineInput" type="text" placeholder="Search..">
-          </div>
-          
-          <table id="side_content">
-            <tbody id="wineMethods">
-             <tr class="tblheader w-self structure doctrine app components">
-               <th>Structure</th>
-             </tr>
-            <tr class="structure w-self doctrine"><td>Doctrine Class {...}</td></tr>
-            <tr class="structure w-self app"><td>App Class {...}</td></tr>
-            <tr class="structure w-self components"><td>Components Class {...}</td></tr>
-            <tr class="tblheader w-self methods wine value magic">
-              <th>Methods</th>
-            </tr>
-            <tr class="methods w-self wine"><td>wine()</td></tr>
-            <tr class="methods w-self value"><td>value()</td></tr>
-            <tr class="methods w-self magic"><td>magic()</td></tr>
-            <tr class="tblheader w-self reserve keywords attr child magic entity __ please try">
-              <th>Reserve Keywords</th>
-            </tr>
-            <tr class="reserve keywords w-self attr"><td>attr</td></tr>
-            <tr class="reserve keywords w-self child"><td>child</td></tr>
-            <tr class="reserve keywords w-self reserve value"><td>value</td></tr>
-            <tr class="reserve keywords w-self __ magic entity"><td>__</td></tr>
-            <tr class="reserve keywords w-self please"><td>please</td></tr>
-            <tr class="reserve keywords w-self try"><td>"try"</td></tr>
-            <tr class="tblheader entity attributes w-self alt classes controls dir for href id list max min name style script src type target val width">
-              <th>Entity Attributes</th>
-            </tr>
-            <tr class="entity attributes w-self alt"><td>alt</td></tr>
-            <tr class="entity attributes w-self classes"><td>classes</td></tr>
-            <tr class="entity attributes w-self controls"><td>controls</td></tr>
-            <tr class="entity attributes w-self dir"><td>dir</td></tr>
-            <tr class="entity attributes w-self for"><td>for</td></tr>
-            <tr class="entity attributes w-self href"><td>href</td></tr>
-            <tr class="entity attributes w-self height"><td>height</td></tr>
-            <tr class="entity attributes w-self id"><td>id</td></tr>
-            <tr class="entity attributes w-self list"><td>list</td></tr>
-            <tr class="entity attributes w-self max"><td>max</td></tr>
-            <tr class="entity attributes w-self min"><td>min</td></tr>
-            <tr class="entity attributes w-self name"><td>name</td></tr>
-            <tr class="entity attributes w-self style"><td>style</td></tr>
-            <tr class="entity attributes w-self script"><td>script</td></tr>
-            <tr class="entity attributes w-self src"><td>src</td></tr>
-            <tr class="entity attributes w-self type"><td>type</td></tr>
-            <tr class="entity attributes w-self target"><td>target</td></tr>
-            <tr class="entity attributes w-self val"><td>val</td></tr>
-            <tr class="entity attributes w-self width"><td>width</td></tr>
-
-            <tr class="tblheader html5 w-self a cy cx circle colgroup cols col canvas caption code cite content coords body button br blockquote bdo bdi b base audio aside article address action area abbr del div dfn dialog details data datalist dl dt datetime em embed fill fieldset figure figcaption footer form hr h1 h2 h3 h4 h5 h6 head html img input i iframe ins kbd legend label link lang li media meter mark meta main method map nav noscript oninput optgroup option output object ol open p param picture pre progress q r ruby rp rt rows samp small span strong sub summary sup svg s select shape summary src source stroke stroke-width tfoot th thead tr track tt title table-tag tbody td template textarea ul usemap u var video wbr">
-              <th>HTML5</th>
-            </tr>
-            <tr class="html5 w-self anchor"><td><a href="#w_self">a (anchor tag)</a></td></tr>
-            <tr class="html5 w-self action"><td>action</td></tr>
-            <tr class="html5 w-self area"><td>area</td></tr>
-            <tr class="html5 w-self abbr"><td>abbr</td></tr>
-            <tr class="html5 w-self address"><td>address</td></tr>
-            <tr class="html5 w-self article"><td>article</td></tr>
-            <tr class="html5 w-self aside"><td>aside</td></tr>
-            <tr class="html5 w-self audio"><td>audio</td></tr>
-            <tr class="html5 w-self base"><td>base</td></tr>
-            <tr class="html5 w-self b"><td>b</td></tr>
-            <tr class="html5 w-self bdi"><td>bdi</td></tr>
-            <tr class="html5 w-self bdo"><td>bdo</td></tr>
-            <tr class="html5 w-self blockquote"><td>blockquote</td></tr>
-            <tr class="html5 w-self br"><td>br</td></tr>
-            <tr class="html5 w-self button"><td>button</td></tr>
-            <tr class="html5 w-self body"><td>body</td></tr>
-            <tr class="html5 w-self coords"><td>coords</td></tr>
-            <tr class="html5 w-self content"><td>content</td></tr>
-            <tr class="html5 w-self cite"><td>cite</td></tr>
-            <tr class="html5 w-self canvas"><td>canvas</td></tr>
-            <tr class="html5 w-self caption"><td>caption</td></tr>
-            <tr class="html5 w-self code"><td>code</td></tr>
-            <tr class="html5 w-self col"><td>col</td></tr>
-            <tr class="html5 w-self cols"><td>cols</td></tr>
-            <tr class="html5 w-self colgroup"><td>colgroup</td></tr>
-            <tr class="html5 w-self circle"><td>circle</td></tr>
-            <tr class="html5 w-self cx"><td>cx</td></tr>
-            <tr class="html5 w-self cy"><td>cy</td></tr>
-            <tr class="html5 w-self del"><td>del</td></tr>
-            <tr class="html5 w-self div"><td>div</td></tr>
-            <tr class="html5 w-self dfn"><td>dfn</td></tr>
-            <tr class="html5 w-self dialog"><td>dialog</td></tr>
-            <tr class="html5 w-self details"><td>details</td></tr>
-            <tr class="html5 w-self data"><td>data</td></tr>
-            <tr class="html5 w-self datalist"><td>datalist</td></tr>
-            <tr class="html5 w-self dl"><td>dl</td></tr>
-            <tr class="html5 w-self dt"><td>dt</td></tr>
-            <tr class="html5 w-self datetime"><td>datetime</td></tr>
-            <tr class="html5 w-self em"><td>em</td></tr>
-            <tr class="html5 w-self embed"><td>embed</td></tr>
-            <tr class="html5 w-self fill"><td>fill</td></tr>
-            <tr class="html5 w-self fieldset"><td>fieldset</td></tr>
-            <tr class="html5 w-self figure"><td>figure</td></tr>
-            <tr class="html5 w-self figcaption"><td>figcaption</td></tr>
-            <tr class="html5 w-self footer"><td>footer</td></tr>
-            <tr class="html5 w-self form"><td>form</td></tr>
-            <tr class="html5 w-self hr"><td>hr</td></tr>
-            <tr class="html5 w-self h1"><td>h1</td></tr>
-            <tr class="html5 w-self h2"><td>h2</td></tr>
-            <tr class="html5 w-self h3"><td>h3</td></tr>
-            <tr class="html5 w-self h4"><td>h4</td></tr>
-            <tr class="html5 w-self h5"><td>h5</td></tr>
-            <tr class="html5 w-self h6"><td>h6</td></tr>
-            <tr class="html5 w-self head"><td>head</td></tr>
-            <tr class="html5 w-self html"><td>html</td></tr>
-            <tr class="html5 w-self img"><td>img</td></tr>
-            <tr class="html5 w-self input"><td>input</td></tr>
-            <tr class="html5 w-self i"><td>i</td></tr>
-            <tr class="html5 w-self iframe"><td>iframe</td></tr>
-            <tr class="html5 w-self ins"><td>ins</td></tr>
-            <tr class="html5 w-self kbd"><td>kbd</td></tr>
-            <tr class="html5 w-self legend"><td>legend</td></tr>
-            <tr class="html5 w-self label"><td>label</td></tr>
-            <tr class="html5 w-self link"><td>link</td></tr>
-            <tr class="html5 w-self lang"><td>lang</td></tr>
-            <tr class="html5 w-self li"><td>li</td></tr>
-            <tr class="html5 w-self media"><td>media</td></tr>
-            <tr class="html5 w-self meter"><td>meter</td></tr>
-            <tr class="html5 w-self mark"><td>mark</td></tr>
-            <tr class="html5 w-self meta"><td>meta</td></tr>
-            <tr class="html5 w-self main"><td>main</td></tr>
-            <tr class="html5 w-self method"><td>method</td></tr>
-            <tr class="html5 w-self map"><td>map</td></tr>
-            <tr class="html5 w-self nav"><td>nav</td></tr>
-            <tr class="html5 w-self noscript"><td>noscript</td></tr>
-            <tr class="html5 w-self oninput"><td>oninput</td></tr>
-            <tr class="html5 w-self optgroup"><td>optgroup</td></tr>
-            <tr class="html5 w-self option"><td>option</td></tr>
-            <tr class="html5 w-self output"><td>output</td></tr>
-            <tr class="html5 w-self object"><td>object</td></tr>
-            <tr class="html5 w-self ol"><td>ol</td></tr>
-            <tr class="html5 w-self open"><td>open</td></tr>
-            <tr class="html5 w-self p"><td>p</td></tr>
-            <tr class="html5 w-self param"><td>param</td></tr>
-            <tr class="html5 w-self picture"><td>picture</td></tr>
-            <tr class="html5 w-self pre"><td>pre</td></tr>
-            <tr class="html5 w-self progress"><td>progress</td></tr>
-            <tr class="html5 w-self q"><td>q</td></tr>
-            <tr class="html5 w-self r"><td>r</td></tr>
-            <tr class="html5 w-self ruby"><td>ruby</td></tr>
-            <tr class="html5 w-self rp"><td>rp</td></tr>
-            <tr class="html5 w-self rt"><td>rt</td></tr>
-            <tr class="html5 w-self rows"><td>rows</td></tr>
-            <tr class="html5 w-self samp"><td>samp</td></tr>
-            <tr class="html5 w-self small"><td>small</td></tr>
-            <tr class="html5 w-self span"><td>span</td></tr>
-            <tr class="html5 w-self strong"><td>strong</td></tr>
-            <tr class="html5 w-self sub"><td>sub</td></tr>
-            <tr class="html5 w-self summary"><td>summary</td></tr>
-            <tr class="html5 w-self sup"><td>sup</td></tr>
-            <tr class="html5 w-self svg"><td>svg</td></tr>
-            <tr class="html5 w-self s"><td>s</td></tr>
-            <tr class="html5 w-self select"><td>select</td></tr>
-            <tr class="html5 w-self shape"><td>shape</td></tr>
-            <tr class="html5 w-self summary"><td>summary</td></tr>
-            <tr class="html5 w-self src"><td>src</td></tr>
-            <tr class="html5 w-self source"><td>source</td></tr>
-            <tr class="html5 w-self stroke"><td>stroke</td></tr>
-            <tr class="html5 w-self stroke-width"><td>stroke-width</td></tr>
-            <tr class="html5 w-self tfoot"><td>tfoot</td></tr>
-            <tr class="html5 w-self th"><td>th</td></tr>
-            <tr class="html5 w-self thead"><td>thead</td></tr>
-            <tr class="html5 w-self tr"><td>tr</td></tr>
-            <tr class="html5 w-self track"><td>track</td></tr>
-            <tr class="html5 w-self tt"><td>tt</td></tr>
-            <tr class="html5 w-self title"><td>title</td></tr>
-            <tr class="html5 w-self table-tag"><td>table</td></tr>
-            <tr class="html5 w-self tbody"><td>tbody</td></tr>
-            <tr class="html5 w-self td"><td>td</td></tr>
-            <tr class="html5 w-self template"><td>template</td></tr>
-            <tr class="html5 w-self textarea"><td>textarea</td></tr>
-            <tr class="html5 w-self ul"><td>ul</td></tr>
-            <tr class="html5 w-self usemap"><td>usemap</td></tr>
-            <tr class="html5 w-self u"><td>u</td></tr>
-            <tr class="html5 w-self var"><td>var</td></tr>
-            <tr class="html5 w-self video"><td>video</td></tr>
-            <tr class="html5 w-self wbr"><td>wbr</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div id="main_content" class="col-span-12 lg:col-span-9">
-
-          <!-- BEGIN Content -->
-          <div class="root">
-            <div>
-              <h1 class="font-h text-5xl font-bold">HTML Frontend Framework PHPLibrary</h1>
-              <h2 clas="tracking-widest">Design for backend optimizedHTML PHPWine written in PHP (Hypertext Preprocessor)</h2>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>PHPWine Documents</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,500;8..60,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="dist/style.f06a43761c86885080d8.css">
+      <link rel="stylesheet" href="dist/output.css">
+   </head>
+   <body>
+      <div class="header-main w-full">
+         <div class="container mx-auto grid grid-cols-12 py-3">
+            <div class="branding col-span-2 grid items-center">
+               <a href="https://phpwine.github.io/documents/">
+               <img src="./img/wine.jpg" alt="PHPwine">
+               </a>
             </div>
-          </div>
-          <div id="w_self" class="w-self-container fixed">
-            <!-- structure -->
-            <div>Structure</div>
-            <div>Doctrine</div>
-            <div>App</div>
-            <div>Components</div>
-            <!-- / end of structure -->
-            <!-- Method -->
-            <div>Method</div>
-            <div>Wine</div>
-            <div>Value</div>
-            <div>Magic</div>
-            <!-- / end of methods -->
-            <!-- Reserve Keywords -->
-            <div>Reserve Keywords</div>
-            <div>attr</div>
-            <div>child</div>
-            <div>value</div>
-            <div>__</div>
-            <div>please</div>
-            <div>try</div>
-            <!-- / END of Reserve Keywords -->
-            <!-- Entity Attributes -->
-            <div>EA</div>
-            <div>alt</div>
-            <div>classes</div>
-            <div>controls</div>
-            <div>dir</div>
-            <div>for</div>
-            <div>href</div>
-            <div>height</div>
-            <div>id</div>
-            <div>list</div>
-            <div>max</div>
-            <div>min</div>
-            <div>name</div>
-            <div>style</div>
-            <div>script</div>
-            <div>src</div>
-            <div>type</div>
-            <div>target</div>
-            <div>val</div>
-            <div>width</div>
-            <!-- / END of Entity Attributes -->
-            <!-- HTML5 -->
-            <div>Entity HTML5</div>
-            <div>a (anchor tag)</div>
-            <div>action</div>
-            <div>area</div>
-            <div>abbr</div>
-            <div>address</div>
-            <div>article</div>
-            <div>aside</div>
-            <div>audio</div>
-            <div>base</div>
-            <div>b</div>
-            <div>bdi</div>
-            <div>bdo</div>
-            <div>blockquote</div>
-            <div>br</div>
-            <div>button</div>
-            <div>body</div>
-            <div>coords</div>
-            <div>content</div>
-            <div>cite</div>
-            <div>canvas</div>
-            <div>caption</div>
-            <div>code</div>
-            <div>col</div>
-            <div>cols</div>
-            <div>colgroup</div>
-            <div>circle</div>
-            <div>cx</div>
-            <div>cy</div>
-            <div>del</div>
-            <div>div</div>
-            <div>dfn</div>
-            <div>dialog</div>
-            <div>details</div>
-            <div>data</div>
-            <div>datalist</div>
-            <div>dl</div>
-            <div>dt</div>
-            <div>datetime</div>
-            <div>em</div>
-            <div>embed</div>
-            <div>fill</div>
-            <div>fieldset</div>
-            <div>figure</div>
-            <div>figcaption</div>
-            <div>footer</div>
-            <div>form</div>
-            <div>hr</div>
-            <div>h1</div>
-            <div>h2</div>
-            <div>h3</div>
-            <div>h4</div>
-            <div>h5</div>
-            <div>h6</div>
-            <div>head</div>
-            <div>html</div>
-            <div>img</div>
-            <div>input</div>
-            <div>i</div>
-            <div>iframe</div>
-            <div>ins</div>
-            <div>kbd</div>
-            <div>legend</div>
-            <div>label</div>
-            <div>link</div>
-            <div>lang</div>
-            <div>li</div>
-            <div>media</div>
-            <div>meter</div>
-            <div>mark</div>
-            <div>meta</div>
-            <div>main</div>
-            <div>method</div>
-            <div>map</div>
-            <div>nav</div>
-            <div>noscript</div>
-            <div>oninput</div>
-            <div>optgroup</div>
-            <div>option</div>
-            <div>output</div>
-            <div>object</div>
-            <div>ol</div>
-            <div>open</div>
-            <div>p</div>
-            <div>param</div>
-            <div>picture</div>
-            <div>pre</div>
-            <div>progress</div>
-            <div>q</div>
-            <div>r</div>
-            <div>ruby</div>
-            <div>rp</div>
-            <div>rt</div>
-            <div>rows</div>
-            <div>samp</div>
-            <div>small</div>
-            <div>span</div>
-            <div>strong</div>
-            <div>sub</div>
-            <div>summary</div>
-            <div>sup</div>
-            <div>svg</div>
-            <div>s</div>
-            <div>select</div>
-            <div>shape</div>
-            <div>summary</div>
-            <div>src</div>
-            <div>source</div>
-            <div>stroke</div>
-            <div>stroke-width</div>
-            <div>tfoot</div>
-            <div>th</div>
-            <div>thead</div>
-            <div>tr</div>
-            <div>track</div>
-            <div>tt</div>
-            <div>title</div>
-            <div>table</div>
-            <div>tbody</div>
-            <div>td</div>
-            <div>template</div>
-            <div>textarea</div>
-            <div>ul</div>
-            <div>usemap</div>
-            <div>u</div>
-            <div>var</div>
-            <div>video</div>
-            <div>wbr</div>
-            
-            <!-- / END of HTML5 -->
-         
-          </div>
-          <!-- / END of content-->
-        </div>
+            <div class="menu-list-mobile xl:hidden grid col-span-10 items-center justify-items-end">
+               <span class="btn-plus text-[40px] leading-[25px]">&#43;</span>
+            </div>
+            <div class="menu-list hidden xl:grid col-span-10 items-center justify-items-end">
+               <ul>
+                  <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/services.html">Services</a></li>
+                  <li class="p-3" id="author"><a href="https://phpwine.github.io/documents/about.html">About</a></li>
+                  <li class="p-3" id="author"><a href="https://phpwine.wordpress.com/">Blog</a></li>
+                  <li class="p-3"><a href="https://github.com/PHPWine/PHPWine/issues/new">Submit Bug</a></li>
+                  <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/send-me-a-gift.html">Buy me coffee?</a></li>
+               </ul>
+            </div>
+         </div>
       </div>
+      <div class="w-full">
+         <div class="container mx-auto grid grid-cols-12 gap-5">
+            <div id="sidebar" class="col-span-3 hidden xl:grid">
+               <div id="wsrch"> 
+                  <input id="wineInput" type="text" placeholder="Search..">
+               </div>
+               <table id="side_content">
+                  <tbody id="wineMethods">
+                     <tr class="tblheader w-self structure doctrine app components">
+                        <th>Structure</th>
+                     </tr>
+                     <tr class="structure w-self doctrine">
+                        <td>Doctrine Class {...}</td>
+                     </tr>
+                     <tr class="structure w-self app">
+                        <td>App Class {...}</td>
+                     </tr>
+                     <tr class="structure w-self components">
+                        <td>Components Class {...}</td>
+                     </tr>
+                     <tr class="tblheader w-self methods wine value magic">
+                        <th>Methods</th>
+                     </tr>
+                     <tr class="methods w-self wine">
+                        <td>wine()</td>
+                     </tr>
+                     <tr class="methods w-self value">
+                        <td>value()</td>
+                     </tr>
+                     <tr class="methods w-self magic">
+                        <td>magic()</td>
+                     </tr>
+                     <tr class="tblheader w-self reserve keywords attr child magic entity __ please try">
+                        <th>Reserve Keywords</th>
+                     </tr>
+                     <tr class="reserve keywords w-self attr">
+                        <td>attr</td>
+                     </tr>
+                     <tr class="reserve keywords w-self child">
+                        <td>child</td>
+                     </tr>
+                     <tr class="reserve keywords w-self reserve value">
+                        <td>value</td>
+                     </tr>
+                     <tr class="reserve keywords w-self __ magic entity">
+                        <td>__</td>
+                     </tr>
+                     <tr class="reserve keywords w-self please">
+                        <td>please</td>
+                     </tr>
+                     <tr class="reserve keywords w-self try">
+                        <td>"try"</td>
+                     </tr>
+                     <tr class="tblheader entity attributes w-self alt classes controls dir for href id list max min name style script src type target val width">
+                        <th>Entity Attributes</th>
+                     </tr>
+                     <tr class="entity attributes w-self alt">
+                        <td>alt</td>
+                     </tr>
+                     <tr class="entity attributes w-self classes">
+                        <td>classes</td>
+                     </tr>
+                     <tr class="entity attributes w-self controls">
+                        <td>controls</td>
+                     </tr>
+                     <tr class="entity attributes w-self dir">
+                        <td>dir</td>
+                     </tr>
+                     <tr class="entity attributes w-self for">
+                        <td>for</td>
+                     </tr>
+                     <tr class="entity attributes w-self href">
+                        <td>href</td>
+                     </tr>
+                     <tr class="entity attributes w-self height">
+                        <td>height</td>
+                     </tr>
+                     <tr class="entity attributes w-self id">
+                        <td>id</td>
+                     </tr>
+                     <tr class="entity attributes w-self list">
+                        <td>list</td>
+                     </tr>
+                     <tr class="entity attributes w-self max">
+                        <td>max</td>
+                     </tr>
+                     <tr class="entity attributes w-self min">
+                        <td>min</td>
+                     </tr>
+                     <tr class="entity attributes w-self name">
+                        <td>name</td>
+                     </tr>
+                     <tr class="entity attributes w-self style">
+                        <td>style</td>
+                     </tr>
+                     <tr class="entity attributes w-self script">
+                        <td>script</td>
+                     </tr>
+                     <tr class="entity attributes w-self src">
+                        <td>src</td>
+                     </tr>
+                     <tr class="entity attributes w-self type">
+                        <td>type</td>
+                     </tr>
+                     <tr class="entity attributes w-self target">
+                        <td>target</td>
+                     </tr>
+                     <tr class="entity attributes w-self val">
+                        <td>val</td>
+                     </tr>
+                     <tr class="entity attributes w-self width">
+                        <td>width</td>
+                     </tr>
+                     <tr class="tblheader html5 w-self a cy cx circle colgroup cols col canvas caption code cite content coords body button br blockquote bdo bdi b base audio aside article address action area abbr del div dfn dialog details data datalist dl dt datetime em embed fill fieldset figure figcaption footer form hr h1 h2 h3 h4 h5 h6 head html img input i iframe ins kbd legend label link lang li media meter mark meta main method map nav noscript oninput optgroup option output object ol open p param picture pre progress q r ruby rp rt rows samp small span strong sub summary sup svg s select shape summary src source stroke stroke-width tfoot th thead tr track tt title table-tag tbody td template textarea ul usemap u var video wbr">
+                        <th>HTML5</th>
+                     </tr>
+                     <tr class="html5 w-self anchor">
+                        <td><a href="#w_self">a (anchor tag)</a></td>
+                     </tr>
+                     <tr class="html5 w-self action">
+                        <td>action</td>
+                     </tr>
+                     <tr class="html5 w-self area">
+                        <td>area</td>
+                     </tr>
+                     <tr class="html5 w-self abbr">
+                        <td>abbr</td>
+                     </tr>
+                     <tr class="html5 w-self address">
+                        <td>address</td>
+                     </tr>
+                     <tr class="html5 w-self article">
+                        <td>article</td>
+                     </tr>
+                     <tr class="html5 w-self aside">
+                        <td>aside</td>
+                     </tr>
+                     <tr class="html5 w-self audio">
+                        <td>audio</td>
+                     </tr>
+                     <tr class="html5 w-self base">
+                        <td>base</td>
+                     </tr>
+                     <tr class="html5 w-self b">
+                        <td>b</td>
+                     </tr>
+                     <tr class="html5 w-self bdi">
+                        <td>bdi</td>
+                     </tr>
+                     <tr class="html5 w-self bdo">
+                        <td>bdo</td>
+                     </tr>
+                     <tr class="html5 w-self blockquote">
+                        <td>blockquote</td>
+                     </tr>
+                     <tr class="html5 w-self br">
+                        <td>br</td>
+                     </tr>
+                     <tr class="html5 w-self button">
+                        <td>button</td>
+                     </tr>
+                     <tr class="html5 w-self body">
+                        <td>body</td>
+                     </tr>
+                     <tr class="html5 w-self coords">
+                        <td>coords</td>
+                     </tr>
+                     <tr class="html5 w-self content">
+                        <td>content</td>
+                     </tr>
+                     <tr class="html5 w-self cite">
+                        <td>cite</td>
+                     </tr>
+                     <tr class="html5 w-self canvas">
+                        <td>canvas</td>
+                     </tr>
+                     <tr class="html5 w-self caption">
+                        <td>caption</td>
+                     </tr>
+                     <tr class="html5 w-self code">
+                        <td>code</td>
+                     </tr>
+                     <tr class="html5 w-self col">
+                        <td>col</td>
+                     </tr>
+                     <tr class="html5 w-self cols">
+                        <td>cols</td>
+                     </tr>
+                     <tr class="html5 w-self colgroup">
+                        <td>colgroup</td>
+                     </tr>
+                     <tr class="html5 w-self circle">
+                        <td>circle</td>
+                     </tr>
+                     <tr class="html5 w-self cx">
+                        <td>cx</td>
+                     </tr>
+                     <tr class="html5 w-self cy">
+                        <td>cy</td>
+                     </tr>
+                     <tr class="html5 w-self del">
+                        <td>del</td>
+                     </tr>
+                     <tr class="html5 w-self div">
+                        <td>div</td>
+                     </tr>
+                     <tr class="html5 w-self dfn">
+                        <td>dfn</td>
+                     </tr>
+                     <tr class="html5 w-self dialog">
+                        <td>dialog</td>
+                     </tr>
+                     <tr class="html5 w-self details">
+                        <td>details</td>
+                     </tr>
+                     <tr class="html5 w-self data">
+                        <td>data</td>
+                     </tr>
+                     <tr class="html5 w-self datalist">
+                        <td>datalist</td>
+                     </tr>
+                     <tr class="html5 w-self dl">
+                        <td>dl</td>
+                     </tr>
+                     <tr class="html5 w-self dt">
+                        <td>dt</td>
+                     </tr>
+                     <tr class="html5 w-self datetime">
+                        <td>datetime</td>
+                     </tr>
+                     <tr class="html5 w-self em">
+                        <td>em</td>
+                     </tr>
+                     <tr class="html5 w-self embed">
+                        <td>embed</td>
+                     </tr>
+                     <tr class="html5 w-self fill">
+                        <td>fill</td>
+                     </tr>
+                     <tr class="html5 w-self fieldset">
+                        <td>fieldset</td>
+                     </tr>
+                     <tr class="html5 w-self figure">
+                        <td>figure</td>
+                     </tr>
+                     <tr class="html5 w-self figcaption">
+                        <td>figcaption</td>
+                     </tr>
+                     <tr class="html5 w-self footer">
+                        <td>footer</td>
+                     </tr>
+                     <tr class="html5 w-self form">
+                        <td>form</td>
+                     </tr>
+                     <tr class="html5 w-self hr">
+                        <td>hr</td>
+                     </tr>
+                     <tr class="html5 w-self h1">
+                        <td>h1</td>
+                     </tr>
+                     <tr class="html5 w-self h2">
+                        <td>h2</td>
+                     </tr>
+                     <tr class="html5 w-self h3">
+                        <td>h3</td>
+                     </tr>
+                     <tr class="html5 w-self h4">
+                        <td>h4</td>
+                     </tr>
+                     <tr class="html5 w-self h5">
+                        <td>h5</td>
+                     </tr>
+                     <tr class="html5 w-self h6">
+                        <td>h6</td>
+                     </tr>
+                     <tr class="html5 w-self head">
+                        <td>head</td>
+                     </tr>
+                     <tr class="html5 w-self html">
+                        <td>html</td>
+                     </tr>
+                     <tr class="html5 w-self img">
+                        <td>img</td>
+                     </tr>
+                     <tr class="html5 w-self input">
+                        <td>input</td>
+                     </tr>
+                     <tr class="html5 w-self i">
+                        <td>i</td>
+                     </tr>
+                     <tr class="html5 w-self iframe">
+                        <td>iframe</td>
+                     </tr>
+                     <tr class="html5 w-self ins">
+                        <td>ins</td>
+                     </tr>
+                     <tr class="html5 w-self kbd">
+                        <td>kbd</td>
+                     </tr>
+                     <tr class="html5 w-self legend">
+                        <td>legend</td>
+                     </tr>
+                     <tr class="html5 w-self label">
+                        <td>label</td>
+                     </tr>
+                     <tr class="html5 w-self link">
+                        <td>link</td>
+                     </tr>
+                     <tr class="html5 w-self lang">
+                        <td>lang</td>
+                     </tr>
+                     <tr class="html5 w-self li">
+                        <td>li</td>
+                     </tr>
+                     <tr class="html5 w-self media">
+                        <td>media</td>
+                     </tr>
+                     <tr class="html5 w-self meter">
+                        <td>meter</td>
+                     </tr>
+                     <tr class="html5 w-self mark">
+                        <td>mark</td>
+                     </tr>
+                     <tr class="html5 w-self meta">
+                        <td>meta</td>
+                     </tr>
+                     <tr class="html5 w-self main">
+                        <td>main</td>
+                     </tr>
+                     <tr class="html5 w-self method">
+                        <td>method</td>
+                     </tr>
+                     <tr class="html5 w-self map">
+                        <td>map</td>
+                     </tr>
+                     <tr class="html5 w-self nav">
+                        <td>nav</td>
+                     </tr>
+                     <tr class="html5 w-self noscript">
+                        <td>noscript</td>
+                     </tr>
+                     <tr class="html5 w-self oninput">
+                        <td>oninput</td>
+                     </tr>
+                     <tr class="html5 w-self optgroup">
+                        <td>optgroup</td>
+                     </tr>
+                     <tr class="html5 w-self option">
+                        <td>option</td>
+                     </tr>
+                     <tr class="html5 w-self output">
+                        <td>output</td>
+                     </tr>
+                     <tr class="html5 w-self object">
+                        <td>object</td>
+                     </tr>
+                     <tr class="html5 w-self ol">
+                        <td>ol</td>
+                     </tr>
+                     <tr class="html5 w-self open">
+                        <td>open</td>
+                     </tr>
+                     <tr class="html5 w-self p">
+                        <td>p</td>
+                     </tr>
+                     <tr class="html5 w-self param">
+                        <td>param</td>
+                     </tr>
+                     <tr class="html5 w-self picture">
+                        <td>picture</td>
+                     </tr>
+                     <tr class="html5 w-self pre">
+                        <td>pre</td>
+                     </tr>
+                     <tr class="html5 w-self progress">
+                        <td>progress</td>
+                     </tr>
+                     <tr class="html5 w-self q">
+                        <td>q</td>
+                     </tr>
+                     <tr class="html5 w-self r">
+                        <td>r</td>
+                     </tr>
+                     <tr class="html5 w-self ruby">
+                        <td>ruby</td>
+                     </tr>
+                     <tr class="html5 w-self rp">
+                        <td>rp</td>
+                     </tr>
+                     <tr class="html5 w-self rt">
+                        <td>rt</td>
+                     </tr>
+                     <tr class="html5 w-self rows">
+                        <td>rows</td>
+                     </tr>
+                     <tr class="html5 w-self samp">
+                        <td>samp</td>
+                     </tr>
+                     <tr class="html5 w-self small">
+                        <td>small</td>
+                     </tr>
+                     <tr class="html5 w-self span">
+                        <td>span</td>
+                     </tr>
+                     <tr class="html5 w-self strong">
+                        <td>strong</td>
+                     </tr>
+                     <tr class="html5 w-self sub">
+                        <td>sub</td>
+                     </tr>
+                     <tr class="html5 w-self summary">
+                        <td>summary</td>
+                     </tr>
+                     <tr class="html5 w-self sup">
+                        <td>sup</td>
+                     </tr>
+                     <tr class="html5 w-self svg">
+                        <td>svg</td>
+                     </tr>
+                     <tr class="html5 w-self s">
+                        <td>s</td>
+                     </tr>
+                     <tr class="html5 w-self select">
+                        <td>select</td>
+                     </tr>
+                     <tr class="html5 w-self shape">
+                        <td>shape</td>
+                     </tr>
+                     <tr class="html5 w-self summary">
+                        <td>summary</td>
+                     </tr>
+                     <tr class="html5 w-self src">
+                        <td>src</td>
+                     </tr>
+                     <tr class="html5 w-self source">
+                        <td>source</td>
+                     </tr>
+                     <tr class="html5 w-self stroke">
+                        <td>stroke</td>
+                     </tr>
+                     <tr class="html5 w-self stroke-width">
+                        <td>stroke-width</td>
+                     </tr>
+                     <tr class="html5 w-self tfoot">
+                        <td>tfoot</td>
+                     </tr>
+                     <tr class="html5 w-self th">
+                        <td>th</td>
+                     </tr>
+                     <tr class="html5 w-self thead">
+                        <td>thead</td>
+                     </tr>
+                     <tr class="html5 w-self tr">
+                        <td>tr</td>
+                     </tr>
+                     <tr class="html5 w-self track">
+                        <td>track</td>
+                     </tr>
+                     <tr class="html5 w-self tt">
+                        <td>tt</td>
+                     </tr>
+                     <tr class="html5 w-self title">
+                        <td>title</td>
+                     </tr>
+                     <tr class="html5 w-self table-tag">
+                        <td>table</td>
+                     </tr>
+                     <tr class="html5 w-self tbody">
+                        <td>tbody</td>
+                     </tr>
+                     <tr class="html5 w-self td">
+                        <td>td</td>
+                     </tr>
+                     <tr class="html5 w-self template">
+                        <td>template</td>
+                     </tr>
+                     <tr class="html5 w-self textarea">
+                        <td>textarea</td>
+                     </tr>
+                     <tr class="html5 w-self ul">
+                        <td>ul</td>
+                     </tr>
+                     <tr class="html5 w-self usemap">
+                        <td>usemap</td>
+                     </tr>
+                     <tr class="html5 w-self u">
+                        <td>u</td>
+                     </tr>
+                     <tr class="html5 w-self var">
+                        <td>var</td>
+                     </tr>
+                     <tr class="html5 w-self video">
+                        <td>video</td>
+                     </tr>
+                     <tr class="html5 w-self wbr">
+                        <td>wbr</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div id="main_content" class="col-span-12 lg:col-span-9">
+               <!-- BEGIN Content -->
+               <div class="root">
+                  <div>
+                     <h1 class="font-h text-5xl font-bold">HTML Frontend Framework</h1>
+                     <h2 clas="tracking-widest">Design for backend optimizedHTML PHPWine written in PHP (Hypertext Preprocessor)</h2>
+                     <br />
+                     <div class="history">
+                        <p>
+                           <strong>About:</strong> Formerly known as PHPWine Vanilla flavour which end life beta version 1.4.0 was announce September 3, 2023 11PM PH. Officially released the PHPWine OptimizedHtml v1.3.0 which have a structured and methods, not just html but also fully optimized and organized inspired with the beauty of Laravel building app approach "similar" to <i>MVC</i> with three major class that will introduce to you sooner or later the Doctrine Class for templates, App Class for main application last but not the least is Components Classes.
+                        </p>
+                     </div>
+                     <br />
+                     <!-- New Section-->
+                     <div clas="wine-code-page">
+                        <br />
+                        <div class="wine-doctrine">
+                           <h4 class="text-2xl font-bold"> Installation: </h4>
+                        </div>
+                        <div class="bg-slate-900 text-yellow-100 rounded-lg">
+                           <pre>
+   <code>
+   <span class="text-green-600">/* required version *v1.3.0 */</span>
+   composer require phpwine/optimizedhtml v1.3.0</code>
+   </pre>
+                        </div>
+                        <br />
+                        <div class="wine-doctrine">
+                           <h4 class="text-1xl font-bold"> Usage: </h4>
+                        </div>
+                        <div class="bg-slate-800 text-yellow-100 rounded-lg">
+                           <pre>
+<code>
+  <span class="text-green-600">/* Basic Usage */</span>
+  require dirname(__FILE__) . DIRECTORY_SEPARATOR .'/vendor/autoload.php';
+
+  use \PHPWineOptimizedHtml;
+  
+  $tag = new OptimizedHtml();
+    
+  print $tag->wine(h1,'Hello World');
+</code>
+</pre>
+                        </div>
+                     </div>
+                     <!-- / END of code -->
+                     <!-- / END New Section-->
+                     <br />
+                     <div class="wine-overview">
+                        <div class="wine-oh">
+                           <h3 class="text-2xl font-bold">Congratulations you are now in PHPWine overview!</h3>
+                           <h4>PHPWine Class Structure insights</h4>
+                        </div>
+                        <div class="bg-slate-800 text-yellow-100 rounded-lg">
+                           <pre>
+<code>
+  <span class="text-green-600">/* Structure Optimizing HTML */</span>
+  | - Doctrine 
+    |- Class HomePageDoctrine { ... }
+    | - App 
+      |- Class HeaderApp { ... }
+    | - Componetents 
+      |- Class Branding { ... }
+      |- Class MainMenu { ... }
+</code>
+</pre>
+                        </div>
+                        <div clas="wine-code-page">
+                           <br />
+                           <div class="wine-doctrine">
+                              <h4 class="text-1xl font-bold"> Doctrine Class php file </h4>
+                              <p>Set your namespace and follow by Class keyword then you Doctrine class named</p>
+                           </div>
+                           <div class="bg-slate-800 text-yellow-100 rounded-lg">
+                              <pre>
+  <code>
+  <span class="text-green-600">/* Here is the example of Doctrine Class file .php */</span>
+  | - Doctrine
+        
+  namespace \YourLoader\folder;   
+
+  Class HomePageDoctrine { 
+
+   ...
+ 
+  } 
+  </code>
+  </pre>
+                           </div>
+                        </div>
+                        <!-- / END of code -->
+                        <div clas="wine-code-page">
+                           <br />
+                           <div class="wine-doctrine">
+                              <h4 class="text-1xl font-bold">Application Class php file </h4>
+                           </div>
+                           <div class="bg-slate-800 text-yellow-100 rounded-lg">
+                              <pre>
+<code>
+  <span class="text-green-600">/* Here is the example of App Class file .php */</span>
+  | - App (Main application)
+          
+  namespace \YourLoader\folder; 
       
-    </div>    
-
-    <footer class="w-full p-6 hidden xl:grid">
-     <div class="container mx-auto">
-      <p class="text-gray-400 text-xs pb-2">Thank you Github for hosting my site @https://phpwine.github.io/documents/</p>
-      <hr />
-      <div class="flex flex-nowrap gap-6 text-gray-400 text-xs pt-4">
-        <a href="https://twitter.com/nielsOffice_">Twitter</a><a href="https://www.facebook.com/nielsofficeofficial">facebook</a>
-        <a href="https://www.linkedin.com/in/nielsoffice/">LinkedIn</a>  <a href="https://phpwine.wordpress.com/">News</a>  <a href="https://github.com/PHPWine/PHPWine/issues">Need Support?</a>  <a href="#">Showcase</a> <a href="https://github.com/PHPWine/">Github</a>  <a href="https://www.linkedin.com/in/nielsoffice/">Hire me!</a>
+  use \YourLoader\folder\HomePageDoctrine;
+  
+  Class HeaderApp Extends HomePageDoctrine  { 
+  
+    ...
+   
+  }
+</code>
+</pre>
+                           </div>
+                        </div>
+                        <!-- / END of code -->
+                        <div clas="wine-code-page">
+                           <br />
+                           <div class="wine-doctrine">
+                              <h4 class="text-1xl font-bold"> Component Brading Class php file </h4>
+                           </div>
+                           <div class="bg-slate-800 text-yellow-100 rounded-lg">
+                              <pre>
+<code>
+  <span class="text-green-600">/* Here is the example of Components Branding Class file .php */</span>
+  | - App (Main application)
+          
+  namespace \YourLoader\folder; 
+      
+  use \YourLoader\folder\HeaderApp;
+  
+  Class Branding Extends HeaderApp  { 
+  
+    ...
+   
+  }
+</code>
+</pre>
+                           </div>
+                        </div>
+                        <!-- / END of code -->
+                        <div clas="wine-code-page">
+                           <br />
+                           <div class="wine-doctrine">
+                              <h4 class="text-1xl font-bold"> Component MainMenu Class php file </h4>
+                           </div>
+                           <div class="bg-slate-800 text-yellow-100 rounded-lg">
+                              <pre>
+<code>
+  <span class="text-green-600">/* Here is the example of Components Main menu Class file .php */</span>
+  | - App (Main application)
+          
+  namespace \YourLoader\folder; 
+      
+  use \YourLoader\folder\HeaderApp;
+  
+  Class MainMenu Extends HeaderApp  { 
+  
+    ...
+   
+  }
+</code>
+</pre>
+                           </div>
+                        </div>
+                        <!-- / END of code -->
+                     </div>
+                     <!-- / wine overview -->
+                  </div>
+               </div>
+               <div id="w_self" class="w-self-container fixed">
+                  <!-- structure -->
+                  <div>Structure</div>
+                  <div>Doctrine</div>
+                  <div>App</div>
+                  <div>Components</div>
+                  <!-- / end of structure -->
+                  <!-- Method -->
+                  <div>Method</div>
+                  <div>Wine</div>
+                  <div>Value</div>
+                  <div>Magic</div>
+                  <!-- / end of methods -->
+                  <!-- Reserve Keywords -->
+                  <div>Reserve Keywords</div>
+                  <div>attr</div>
+                  <div>child</div>
+                  <div>value</div>
+                  <div>__</div>
+                  <div>please</div>
+                  <div>try</div>
+                  <!-- / END of Reserve Keywords -->
+                  <!-- Entity Attributes -->
+                  <div>EA</div>
+                  <div>alt</div>
+                  <div>classes</div>
+                  <div>controls</div>
+                  <div>dir</div>
+                  <div>for</div>
+                  <div>href</div>
+                  <div>height</div>
+                  <div>id</div>
+                  <div>list</div>
+                  <div>max</div>
+                  <div>min</div>
+                  <div>name</div>
+                  <div>style</div>
+                  <div>script</div>
+                  <div>src</div>
+                  <div>type</div>
+                  <div>target</div>
+                  <div>val</div>
+                  <div>width</div>
+                  <!-- / END of Entity Attributes -->
+                  <!-- HTML5 -->
+                  <div>Entity HTML5</div>
+                  <div>a (anchor tag)</div>
+                  <div>action</div>
+                  <div>area</div>
+                  <div>abbr</div>
+                  <div>address</div>
+                  <div>article</div>
+                  <div>aside</div>
+                  <div>audio</div>
+                  <div>base</div>
+                  <div>b</div>
+                  <div>bdi</div>
+                  <div>bdo</div>
+                  <div>blockquote</div>
+                  <div>br</div>
+                  <div>button</div>
+                  <div>body</div>
+                  <div>coords</div>
+                  <div>content</div>
+                  <div>cite</div>
+                  <div>canvas</div>
+                  <div>caption</div>
+                  <div>code</div>
+                  <div>col</div>
+                  <div>cols</div>
+                  <div>colgroup</div>
+                  <div>circle</div>
+                  <div>cx</div>
+                  <div>cy</div>
+                  <div>del</div>
+                  <div>div</div>
+                  <div>dfn</div>
+                  <div>dialog</div>
+                  <div>details</div>
+                  <div>data</div>
+                  <div>datalist</div>
+                  <div>dl</div>
+                  <div>dt</div>
+                  <div>datetime</div>
+                  <div>em</div>
+                  <div>embed</div>
+                  <div>fill</div>
+                  <div>fieldset</div>
+                  <div>figure</div>
+                  <div>figcaption</div>
+                  <div>footer</div>
+                  <div>form</div>
+                  <div>hr</div>
+                  <div>h1</div>
+                  <div>h2</div>
+                  <div>h3</div>
+                  <div>h4</div>
+                  <div>h5</div>
+                  <div>h6</div>
+                  <div>head</div>
+                  <div>html</div>
+                  <div>img</div>
+                  <div>input</div>
+                  <div>i</div>
+                  <div>iframe</div>
+                  <div>ins</div>
+                  <div>kbd</div>
+                  <div>legend</div>
+                  <div>label</div>
+                  <div>link</div>
+                  <div>lang</div>
+                  <div>li</div>
+                  <div>media</div>
+                  <div>meter</div>
+                  <div>mark</div>
+                  <div>meta</div>
+                  <div>main</div>
+                  <div>method</div>
+                  <div>map</div>
+                  <div>nav</div>
+                  <div>noscript</div>
+                  <div>oninput</div>
+                  <div>optgroup</div>
+                  <div>option</div>
+                  <div>output</div>
+                  <div>object</div>
+                  <div>ol</div>
+                  <div>open</div>
+                  <div>p</div>
+                  <div>param</div>
+                  <div>picture</div>
+                  <div>pre</div>
+                  <div>progress</div>
+                  <div>q</div>
+                  <div>r</div>
+                  <div>ruby</div>
+                  <div>rp</div>
+                  <div>rt</div>
+                  <div>rows</div>
+                  <div>samp</div>
+                  <div>small</div>
+                  <div>span</div>
+                  <div>strong</div>
+                  <div>sub</div>
+                  <div>summary</div>
+                  <div>sup</div>
+                  <div>svg</div>
+                  <div>s</div>
+                  <div>select</div>
+                  <div>shape</div>
+                  <div>summary</div>
+                  <div>src</div>
+                  <div>source</div>
+                  <div>stroke</div>
+                  <div>stroke-width</div>
+                  <div>tfoot</div>
+                  <div>th</div>
+                  <div>thead</div>
+                  <div>tr</div>
+                  <div>track</div>
+                  <div>tt</div>
+                  <div>title</div>
+                  <div>table</div>
+                  <div>tbody</div>
+                  <div>td</div>
+                  <div>template</div>
+                  <div>textarea</div>
+                  <div>ul</div>
+                  <div>usemap</div>
+                  <div>u</div>
+                  <div>var</div>
+                  <div>video</div>
+                  <div>wbr</div>
+                  <!-- / END of HTML5 -->
+               </div>
+               <!-- / END of content-->
+            </div>
+         </div>
       </div>
-     </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="dist/bundle.ae9f6d82576e341559c7.js" async defer></script> 
-    </body>
+      <footer class="w-full p-6 hidden xl:grid">
+         <div class="container mx-auto">
+            <p class="text-gray-400 text-xs pb-2">Thank you Github for hosting my site @https://phpwine.github.io/documents/</p>
+            <hr />
+            <div class="flex flex-nowrap gap-6 text-gray-400 text-xs pt-4">
+               <a href="https://twitter.com/nielsOffice_">Twitter</a><a href="https://www.facebook.com/nielsofficeofficial">facebook</a>
+               <a href="https://www.linkedin.com/in/nielsoffice/">LinkedIn</a>  <a href="https://phpwine.wordpress.com/">News</a>  <a href="https://github.com/PHPWine/PHPWine/issues">Need Support?</a>  <a href="#">Showcase</a> <a href="https://github.com/PHPWine/">Github</a>  <a href="https://www.linkedin.com/in/nielsoffice/">Hire me!</a>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="dist/bundle.ae9f6d82576e341559c7.js" async defer></script> 
+   </body>
 </html>
