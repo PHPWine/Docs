@@ -605,6 +605,10 @@ video {
   margin-right: auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
 }
@@ -625,6 +629,10 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -635,6 +643,14 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .scroll-smooth {
@@ -650,9 +666,25 @@ video {
   padding: 0.75rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-xl {
@@ -665,12 +697,40 @@ video {
   line-height: 1;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
+.leading-\[25px\] {
+  line-height: 25px;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 @media (min-width: 480px) {
@@ -694,6 +754,10 @@ video {
 @media (min-width: 768px) {
   .xl\:grid {
     display: grid;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 
   .xl\:bg-\[red\] {
