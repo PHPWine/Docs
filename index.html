@@ -14,7 +14,7 @@
       <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,500;8..60,700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="dist/owl.carousel.min.css">
       <link rel="stylesheet" href="dist/owl.theme.default.min.css">
-      <link rel="stylesheet" href="dist/style.056c2907aa9dc42c406c.css">
+      <link rel="stylesheet" href="dist/style.3d064aa81c0e42a3fb3a.css">
       <link rel="stylesheet" href="dist/output.css">
    </head>
    <body>
@@ -770,9 +770,285 @@
                   <!-- / end of structure -->
                   <!-- Method -->
                   <div>Method</div>
-                  <div>Wine</div>
-                  <div>Value</div>
-                  <div>Magic</div>
+                  <div id="w_wine_method" class="w-wine-method bg-gray-200 p-4 rounded-lg wine-codes overflow-x-scroll">
+                   <h4 class="text-1xl font-bold"> wine(); function|method </h4>
+                   <span class="text-slate-700 text-sm">Defined: wine function or method is use to generate optmized html </span>
+                 <div class="w-method">
+                     <div clas="wine-code-page">
+<div class="text-slate-900">
+<pre><code>
+ wine( 
+   
+  string $tag, 
+  string|callable|array $content = [], 
+  string|array $attr = [], 
+  $enable_html = false 
+  
+ ); 
+</code></pre>
+</div>
+<br />
+<span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+                
+<div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx">
+   <pre><code>
+  @param string $tag : < require >
+  - This is where you will assigned any html tag such as 'h1', 'div', 'p' etc.. 
+  
+  @param string|callable|array $content : < optional >
+  - String : Any string value you want to display in a browser from a-Z and 0-inifinite 
+             inlcuding special characters as long as in a form of string. 
+
+  - Callable : It is in a form of string but actually name of your method or function 
+               ex. "my_call_back". 
+
+  - Array : It is predefined and reserved keyword "child key" it will able you to 
+            create a child element html.
+
+  @param string|array $attr :  < optional >
+  - String: Directly use string to be your html attributes.
+
+  - Array : Array approach to be your html attributes.
+
+  @param $enable_html :  < optional >
+   - Boolean : optional true or false default value is false.
+   </pre></code>
+</div>
+
+<!-- BEGIN CODE EX -->
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine with HTML tag < require ></h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML */</span>
+print wine('div');
+</code></pre>
+   </div>
+</div>
+<br />
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine with HTML Tag and value <i>"String"</i> < optional > </h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML value string  */</span>
+print wine('div','Hello World');
+</code></pre>
+   </div>
+</div>
+<br />
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine with HTML Tag and value <i>"String call back" function</i> < optional > </h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML value string call back */</span>
+print wine('div','my_call_back_function');
+
+function my_call_back_function() {
+   return "Hello World";
+}
+</code></pre>
+   </div>
+</div>
+<br />
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine with HTML Tag and value <i>"Array" child element</i> < optional ></h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML value Array child element */</span>
+print wine('div',[
+   child => [
+     ['div', value =>['Hello World']]
+   ]
+]);
+</code></pre>
+   </div>
+</div>
+<br />
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine with HTML Tag and <i>attribute</i> String < optional ></h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML Attributes string */</span>
+print wine('div','Hello World','class="my-class" id="my_ids"'); <span class="text-green-600">/* make sure remove extrass spacing it reflect to html */</span>
+</code></pre>
+   </div>
+</div>
+<br />
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine with HTML Tag and <i>attribute</i> Array < optional ></h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML Attributes array */</span>
+print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"]); <span class="text-green-600">/*automatic removed extra spacing*/</span>
+</code></pre>
+   </div>
+</div>
+<br />
+<div clas="wine-code-page">
+   <div class="wine-doctrine">
+      <h4 class="text-1xl font-bold"> wine enable html  < optional ></h4>
+   </div>
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* wine with div tag HTML enable html optional */</span>
+print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <span class="text-green-600">/* default value is false*/</span>
+</code></pre>
+   </div>
+</div>
+<!-- END CODE Ex.-->
+                     </div>
+                  </div>
+                  </div><!-- END of w_wine_method -->
+                  <div id="w_value_method" class="w-wine-method bg-gray-200 p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> value(); function|method </h4>
+                     <span class="text-slate-700 text-sm">Defined: value function or method is use to create a reusable or single callable function </span>
+                   <div class="w-method">
+                       <div clas="wine-code-page">
+<div class="text-slate-900">
+<pre><code>
+ value( 
+   
+  object $class = null,
+  string|callable $call_back = null,
+  mixed ...$args 
+   
+ ); 
+</code></pre>
+</div>
+  <br />
+  <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+                  
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx">
+  <pre><code>
+  @param object $class  : < optional&nullable >
+  - This object is the class of method you are working with the call-back
+
+  @param string|callable| $call_back : < optional&nullable >
+  - Callable : It is in a form of string but actually name of your method or function 
+            ex. "my_call_back". 
+
+  @param mixed ...$args :  < optional&nullable >
+  - mixed: arguments data call back
+
+</pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div clas="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> value method/function basic usage</h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code><span class="text-green-600">/* value function|method */</span>
+   <span class="text-green-600">/* $this if you are within the class */</span> 
+  print value($this,'my_call_back', 'Developer');
+
+  function my_call_back( $param ) {
+    return "Hello World ".$param;
+  }
+  </code></pre>
+     </div>
+  </div>
+  <br />
+  <div clas="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> value with in HTML </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* value function in HTML  */</span>
+ return wine('section', [
+
+  child => [
+    <span class="text-green-600">/* $this replace of object name you are working with your call back  */</span>
+    ['div', value=>[value((new Branding),'component_top_logo_header')]]
+  ]
+ ]);
+</code></pre>
+     </div>
+  </div>
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_value_method -->
+                  <div id="w_magic_method" class="w-wine-method bg-gray-200 p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> magic(); function|method </h4>
+                     <span class="text-slate-700 text-sm">Defined: magic function or method is use to filter and replace a current value with the callback </span>
+                   <div class="w-method">
+                       <div clas="wine-code-page">
+<div class="text-slate-900">
+<pre><code>
+ magic( 
+   
+  object $class = null,
+  string|callable $call_back = null,
+  mixed ...$current_value 
+   
+ ); 
+</code></pre>
+</div>
+  <br />
+  <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+                  
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx">
+  <pre><code>
+  @param object $class  : < optional&nullable >
+  - This object is the class of method you are working with the call-back
+
+  @param string|callable| $call_back : < optional&nullable >
+  - Callable : It is in a form of string but actually name of your method or function 
+            ex. "my_call_back". 
+
+  @param mixed ...$current_value :  < optional&nullable >
+  - mixed: arguments data call back
+
+</pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div clas="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> magic method/function basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code><span class="text-green-600">/* magic can wait unlil the exact Date and Time you wish to call invoke it */</span>
+   <span class="text-green-600">/* $this if you are within the class */</span> 
+  print magic($this,'my_call_back', 'Developer');
+
+  function my_call_back( $param ) {
+    return "Hello World ".$param;
+  }
+  </code></pre>
+     </div>
+  </div>
+  <br />
+  <div clas="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> magic with in HTML </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+<pre><code><span class="text-green-600">/* working with magic method  */</span>
+ return wine('section', [
+
+  child => [
+    <span class="text-green-600">/* $this replace of object name you are working with your call back  */</span>
+    ['div', value=>[magic((new object),'method_filter','current_value')]]
+  ]
+ ]);
+</code></pre>
+     </div>
+  </div>
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_value_method -->
                   <!-- / end of methods -->
                   <!-- Reserve Keywords -->
                   <div>Reserve Keywords</div>
@@ -957,6 +1233,13 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
       <script src="dist/owl.carousel.min.js"></script> 
-      <script src="dist/bundle.82045cd3d464e47ab4da.js" async defer></script> 
+      <script src="dist/bundle.6a6c838c444f7c1b9f24.js" async defer></script> 
+      <script>
+         jQuery(document).ready(function () {
+            jQuery('.w-wine-method').map(function( k,v ) {
+               jQuery(v).addClass('Testing');
+            });
+         });
+      </script>
    </body>
 </html>
