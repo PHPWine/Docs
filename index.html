@@ -769,7 +769,61 @@
                   <div>Components</div>
                   <!-- / end of structure -->
                   <!-- Method -->
-                  <div>Method</div>
+                  <div id="w_wine_method" class="w-wine-method bg-gray-200 p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> PHPWine Methods </h4>
+                     <br />
+                     <div class="w-method grid gap-6">
+                        <h3 class="font-bold">PHPWine OptimizedHtml has predefined methods, these methods are helpful for developer to minimize the workload, and it makes the structure simpler and effective. 
+                        </h3>
+                        <div>
+                        <p>  
+                        <strong>wine</strong> <i>function|method </i> : Use to generate optimized html.
+                        <br /><strong>- wine();</strong> is primary init function in order to have optimized html
+                        it is also use in order to create a condition before using "please" reserve keyword,
+                        The "try" or "please" is more secured when you wrap them in wine before you use. 
+                       </p>
+                     </div>
+                     <div>
+                     <div>
+                       <p>
+                        - Inside the wine(); you can also create a child using predefined array child
+                        and it's keyword "child" with this key you can create a descendant element like
+                        div or any within the providers property inside the wine class, more than that
+                        you can do extend wine if you wish to create your own custom html tag. 
+                       </p>
+                     </div>
+                       <p>
+                        - In order to use a value and magic methods you have to call the wine function,
+                        otherwise you will stored them in a variable then place within the wine as parameter or argument.
+                       </p>
+                     </div>
+                     <div>
+                       <p>
+                     <strong>value</strong> <i>function|method</i> : Use to return content for a call back function.
+                     <br /><strong>- value();</strong> is a string function that provide a callback for "value" reserved keyword
+                        when you working with the child array there is a reserved keyword "value" and "attr"
+                        with these keys you can add attributes in your array custom html and write the "value"
+                        you can return a any form of string value to have a content that child array element
+                        or you can use the value function to have a return call back that mostly do in main app
+                        files, with that value function you can extract the value you want to return in your
+                        child array key html 
+                      </p>
+                     </div>
+                     <div>
+                      <p>  
+                        <strong>magic</strong> <i>function|method</i> : Use to filter the current content and replace. 
+                        <br /><strong>- magic();</strong> is exactly the same as value(); however the return argument is the current value,
+                        The magic function is use when you want to replace the current value of the html
+                        or the full app html, this magic function are mostly use in a session,
+                        for instance you have a different layout header when the user is login or active session
+                        else you have a default navigation once the user is logout.
+                        - you can also add magic if your client want to update the layout without touching the current
+                        structure so if ever the there's a change of mind you don't need to do it over and over again
+                        because you use the magic for the temporary time for a new layout structure.
+                      </p>
+                     </div>
+                    </div>
+                  </div><!-- END of w_wine_method -->
                   <div id="w_wine_method" class="w-wine-method bg-gray-200 p-4 rounded-lg wine-codes overflow-x-scroll">
                    <h4 class="text-1xl font-bold"> wine(); function|method </h4>
                    <span class="text-slate-700 text-sm">Defined: wine function or method is use to generate optmized html </span>
