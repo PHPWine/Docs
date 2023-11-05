@@ -824,7 +824,7 @@
                     </div>
                   </div><!-- END of w_wine_method -->
                   <div id="w_wine_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                   <h4 class="text-1xl font-bold"> wine(); function|method </h4>
+                   <h4 class="text-1xl font-bold"> wine(); | Type: function|method </h4>
                    <span class="text-slate-700 text-sm">Defined: wine function or method is use to generate optmized html </span>
                  <div class="w-method">
                      <div class="wine-code-page">
@@ -961,7 +961,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                   </div>
                   </div><!-- END of w_wine_method -->
                   <div id="w_value_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> value(); function|method </h4>
+                     <h4 class="text-1xl font-bold"> value(); | Type: function|method </h4>
                      <span class="text-slate-700 text-sm">Defined: value function or method is use to create a reusable or single callable function </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1035,7 +1035,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_value_method -->
                   <div id="w_magic_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> magic(); function|method </h4>
+                     <h4 class="text-1xl font-bold"> magic(); | Type: function|method </h4>
                      <span class="text-slate-700 text-sm">Defined: magic function or method is use to filter and replace a current value with the callback </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1107,16 +1107,385 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
   <!-- END CODE Ex.-->
                        </div>
                     </div>
-                  </div><!-- END of w_value_method -->
+                  </div><!-- END of w_magic_method -->
                   <!-- / end of methods -->
                   <!-- Reserve Keywords -->
-                  <div>Reserve Keywords</div>
-                  <div>attr</div>
-                  <div>child</div>
-                  <div>value</div>
-                  <div>__</div>
-                  <div>please</div>
-                  <div>try</div>
+                  <div id="w_attr_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> Reserved Keywords </h4>
+                     <span class="text-slate-700 text-sm">Defined: Reserved keyword is a type of constant that predefined in wine class those keys are uses in each significant purposes.   
+                        <div class="my-2">
+                        <strong>attr :</strong> attribute key uses to add attributes in your html inside in php file.
+                        </div>
+                        <div class="my-2">
+                        <strong>child :</strong> key uses to child element in your wine function in array approach in your html inside in php file.
+                        </div>
+                        <div>
+                        <strong>value :</strong> key uses to add a content in any form of string inside this key.
+                        </div>
+                        <div class="my-2">
+                        <strong> __ :</strong> double underscore or known as magic entity key use to remove the parent when you don’t need it in your wine method mostly if you are working with please or “try” key  
+                        </div>
+                        <div class="my-2">
+                        <strong>“please” or “try”</strong>
+                        Please and “try” layers : This is where you can able to add “try” or please keyword 
+                        however as much as possible wrap the “try” or please keyword inside the wine();
+                        
+                        with this approach you can easily trace you source code instead of putting please in a different layers. 
+                     </div>   
+                     </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll"><pre><code>
+  wine(__, [
+
+   Child=> [
+    /* goes here */
+   ]
+   
+  ]);
+    
+  /* First Layer */
+  wine('div', [ 
+    child => [        
+      please => function() { ... },
+    ]
+  ]);
+  
+  /* Second Layer */
+  wine('div', [ 
+    child => [ 
+     ['try' => function() { ... } ],
+    ]
+  ]);
+  
+  /* Third layer */
+  wine('div', [ 
+    child => [ 
+     [div, value => [ 'try' => function() { ... }] ],
+    ]
+  ]);
+  
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+
+
+                       </div>
+                    </div>
+                  </div><!-- END of w_attr_rk -->
+                  <div id="w_attr_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> attr | Type: constant </h4>
+                     <span class="text-slate-700 text-sm">Defined: "attr" key use to add attribute in your html inside in php file </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+
+ attr => [ ] 
+   
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @key constant attr   : < optional&require >
+ </pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> attr constant basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code>
+  <span class="text-green-600">/* attr constant will only available inside the child key predefined array child element */</span> 
+  print wine(div, [
+   child => [
+      [div, attr => [ classses=>"my-class" id=>"my_id"] ]
+    ]
+  ]);
+  </code></pre>
+     </div>
+  </div>
+  
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_attr_rk -->
+                  <div id="w_child_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> child | Type: constant </h4>
+                     <span class="text-slate-700 text-sm">Defined: "attr" key use to add array child element in your html inside in php file </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+
+ child => [ ] 
+   
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @key constant child   : < optional&require >
+ </pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> child constant basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code>
+  <span class="text-green-600">/* child key predefined array child element */</span> 
+  print wine(div, [
+   child => [
+      [div, attr => [ classses=>"my-class" id=>"my_id"] ],
+      [div, 
+        attr => [ 
+         classses=>"my-class" 
+         id=>"my_id"
+      ]]
+    ]
+  ]);
+  </code></pre>
+     </div>
+  </div>
+  
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_child_rk -->
+                  <div id="w_value_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> value | Type: constant </h4>
+                     <span class="text-slate-700 text-sm">Defined: "value" key use to add content to your array child element in your html inside in php file </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+
+ value => [ ] 
+   
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @key constant child   : < optional&require >
+ </pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> child constant basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code>
+  <span class="text-green-600">/* will accept any string value */</span> 
+  print wine(div, [
+   child => [
+      [div, value => ["Hello World"]]
+    ]
+  ]);
+  </code></pre>
+     </div>
+  </div>
+  
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_value_rk -->
+                  <div id="w__rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> __ | Type: constant </h4>
+                     <span class="text-slate-700 text-sm">Defined: "__" (double underscore) or known as magic entity key use to removed parent element in wine your html inside in php file </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+
+ wine(__,); 
+   
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @key constant child   : < optional&require >
+ </pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> magic entity constant basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code>
+  <span class="text-green-600">/* will accept any string value */</span> 
+  <span class="text-green-600">/* will only return child div with content "Hello World" */</span> 
+  print wine(__, [
+   child => [
+      [div, value => ["Hello World"]]
+    ]
+  ]);
+  </code></pre>
+     </div>
+  </div>
+  
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w__rk -->
+                  <div id="w_please_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> please | Type: constant </h4>
+                     <span class="text-slate-700 text-sm">Defined: "please" key use to add conidition or statement in your element in wine your html inside in php file </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+
+ please => function() { ... } 
+   
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @key constant please   : < optional&require >
+ </pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> please constant basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code>
+  <span class="text-green-600">/* wine() and array child cannot work togther inside the please keyword! */</span> 
+  <span class="text-green-600">/* create condition before each child array */</span> 
+  print wine(__, [ 
+        
+    child => [ 
+    
+    ['div', value => [ please => function() {
+
+      $dd   = [];
+      $dd[] = wine('h1', 'Hello!' );  <span class="text-green-600">/* only wine or child array element works */</span> 
+       <span class="text-green-600">/* $dd[] = ['h1',  value => ['Hello World'] ];  if you use array child remove wine(); */</span> 
+       foreach([1,2,3] as $data ) {
+
+       $dd[] = wine('div', $data);
+       <span class="text-green-600">/* $dd[] =  ['div',value => [$data] ,attr => [ classes => 'w-full'] ]; </span>
+        
+       } <span class="text-green-600">/* end of statement or condition */</span> 
+      return $dd;
+     }  <span class="text-green-600">/* end of please */</span> 
+   ]]
+   
+ ]]);
+  </code></pre>
+     </div>
+  </div>
+  
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_please_rk -->
+                  <div id="w_try_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> "try" | Type: string </h4>
+                     <span class="text-slate-700 text-sm">Defined: "try" key use to add conidition or statement in your element in wine your html inside in php file </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+
+ "try" => function() { ... } 
+   
+</code></pre>
+</div>
+  
+<div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+</div>
+
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @key string "try"   : < optional&require >
+ </pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> "try" string basic usage </h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code>
+  <span class="text-green-600">/* wine() and array child cannot work togther inside the please keyword! */</span> 
+  <span class="text-green-600">/* create condition before each child array */</span> 
+  print wine(__, [ 
+        
+    child => [ 
+    
+    ['div', value => [ "try" => function() {
+
+      $dd   = [];
+      $dd[] = wine('h1', 'Hello!' );  <span class="text-green-600">/* only wine or child array element works */</span> 
+      <span class="text-green-600">/* $dd[] = ['h1',  value => ['Hello World'] ];  if you use array child remove wine(); */</span> 
+       foreach([1,2,3] as $data ) {
+
+       $dd[] = wine('div', $data);
+       <span class="text-green-600">/* $dd[] =  ['div',value => [$data] ,attr => [ classes => 'w-full'] ]; */ </span>
+        
+       } <span class="text-green-600">/* end of statement or condition */</span> 
+      return $dd;
+     }  <span class="text-green-600">/* end of please */</span> 
+   ]]
+   
+ ]]);
+  </code></pre>
+     </div>
+  </div>
+  
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_please_rk -->
                   <!-- / END of Reserve Keywords -->
                   <!-- Entity Attributes -->
                   <div>EA</div>
