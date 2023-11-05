@@ -1212,7 +1212,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
   <span class="text-green-600">/* attr constant will only available inside the child key predefined array child element */</span> 
   print wine(div, [
    child => [
-      [div, attr => [ classses=>"my-class" id=>"my_id"] ]
+      [div, attr => [ classes=>"my-class" id=>"my_id"] ]
     ]
   ]);
   </code></pre>
@@ -1225,7 +1225,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                   </div><!-- END of w_attr_rk -->
                   <div id="w_child_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
                      <h4 class="text-1xl font-bold"> child | Type: constant </h4>
-                     <span class="text-slate-700 text-sm">Defined: "attr" key use to add array child element in your html inside in php file </span>
+                     <span class="text-slate-700 text-sm">Defined: "child" key use to add array child element in your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
 <div class="text-slate-900 overflow-x-scroll">
@@ -1257,10 +1257,10 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
   <span class="text-green-600">/* child key predefined array child element */</span> 
   print wine(div, [
    child => [
-      [div, attr => [ classses=>"my-class" id=>"my_id"] ],
+      [div, attr => [ classes=>"my-class" id=>"my_id"] ],
       [div, 
         attr => [ 
-         classses=>"my-class" 
+         classes=>"my-class" 
          id=>"my_id"
       ]]
     ]
