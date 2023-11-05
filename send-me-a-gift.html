@@ -1,45 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PHPWine Documents</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,500;8..60,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="dist/style.82d289503e39ac13c124.css">
-        <link rel="stylesheet" href="dist/output.css">
-
-    </head>
-    <body>
+<html class="scroll-smooth">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+      <title>PHPWine Documents</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="PHPWine OptimizedHtml Design for backend optimizedHTML PHPWine written in PHP (Hypertext Preprocessor)">
+      <meta name="keywords" content="HTML, PHPWine, OptimizedHtml, PHPLibrary, PHP">
+      <meta name="author" content="Leinner zednanref">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,500;8..60,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="dist/owl.carousel.min.css">
+      <link rel="stylesheet" href="dist/owl.theme.default.min.css">
+      <link rel="stylesheet" href="dist/style.8bf00a75b27aaee58e8e.css">
+      <link rel="stylesheet" href="dist/output.css">
+   </head>
+   <body>
     <div class="header-main w-full">
       <div class="container mx-auto grid grid-cols-12 py-3">
-        <div class="branding col-span-2 grid items-center">
-           <a href="https://phpwine.github.io/documents/">
-              <img src="./img/wine.jpg" alt="PHPwine">
-           </a>
-        </div>
-        <div class="menu-list hidden xl:grid col-span-10 items-center justify-items-end">
-          <ul>
-            <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/showcase.html">Showcase</a></li> 
-            <li class="p-3" id="author"><a href="https://phpwine.wordpress.com/">Blog</a></li>
-            <li class="p-3"><a href="https://github.com/PHPWine/PHPWine/issues/new">Submit Bug</a></li>
-            <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/send-me-a-gift.html">Buy me coffee?</a></li> 
-          </ul> 
-        </div>
+         <div class="branding col-span-2 grid items-center">
+            <a href="https://phpwine.github.io/documents/">
+            <img src="./img/wine.jpg" alt="PHPwine">
+            </a>
+         </div>
+         <div class="menu-list-mobile xl:hidden grid col-span-10 items-center justify-items-end">
+            <span class="btn-plus text-[40px] leading-[25px]">&#43;</span>
+         </div>
+         <div class="menu-list hidden xl:grid col-span-10 items-center justify-items-end">
+            <ul>
+               <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/showcase.html">Showcase</a></li>
+               <li class="p-3" id="author"><a href="https://phpwine.wordpress.com/">Blog</a></li>
+               <li class="p-3"><a href="https://github.com/PHPWine/PHPWine/issues/new">Submit Bug</a></li>
+               <li class="p-3" id="wineSupport"><a href="https://phpwine.github.io/documents/send-me-a-gift.html">Buy me coffee?</a></li>
+            </ul>
+         </div>
       </div>
-    </div>
+   </div>
 
-    <div class="w-full">
-      <div class="container mx-auto grid grid-cols-12 gap-5">
-        <h2>Underconstruction</h2>
+   <div class="send-coffee w-full mx-auto">
+ 
+
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./img/Send-coffee.jpg" alt="Buy me coffee"/></div>
+        <div class="item"><img src="./img/Send-wine.jpg" alt="Support wine"/></div>
+        <div class="item"><img src="./img/Thankyou.jpg" alt="Thank you!"/></div>
+        <div class="item"><img src="./img/work-with-you.jpg" alt="Work with you..."/></div>
       </div>
-    </div>    
+
+   
+   </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="dist/bundle.f9e2f2bcbdb4cfc213b4.js" async defer></script>  
-    </body>
+    <script src="dist/owl.carousel.min.js"></script> 
+    <script src="assets/about.js" async defer></script> 
+    <script>
+       jQuery(function () {
+        jQuery('.owl-carousel').owlCarousel({
+          loop:true,
+          autoplay:true,
+          nav: false,
+          dots: false,
+          slideTransition: 'linear', 
+          autoplaySpeed: 1500,
+          smartSpeed: 1000,
+          items:1,
+          margin:10,
+          autoHeight:true
+       });
+     });
+      </script>
+   </body>
 </html>
