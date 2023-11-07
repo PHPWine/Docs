@@ -65,11 +65,17 @@
                      <tr class="methods w-self wine">
                         <td>wine()</td>
                      </tr>
+                     <tr class="tblheader w-self methods attr attribute hook">
+                        <th>PHPWine Hooks</th>
+                     </tr>
                      <tr class="methods w-self value">
                         <td>value()</td>
                      </tr>
                      <tr class="methods w-self magic">
                         <td>magic()</td>
+                     </tr>
+                     <tr class="methods w-self method attr hook">
+                        <td>attr()</td>
                      </tr>
                      <tr class="tblheader w-self reserve keywords attr child magic entity __ please try">
                         <th>Reserve Keywords</th>
@@ -611,7 +617,7 @@
   $tag = new PHPWineOptimizedHtml\OptimizedHtml;
     
   print $tag->wine(h1,'Hello World');
-  
+
 </code></pre>
                         </div>
                      </div>
@@ -958,8 +964,13 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                      </div>
                   </div>
                   </div><!-- END of w_wine_method -->
+                  <!-- / end of methods -->
+                  <!-- BEGIN ATTR Hook -->
+                  <div id="w_hook" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> Hooks </h4>
+                  </div><!-- END of w_hook -->
                   <div id="w_value_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> value(); | Type: function|method </h4>
+                     <h4 class="text-1xl font-bold"> value(); | Type: function|method|hook </h4>
                      <span class="text-slate-700 text-sm">Defined: value function or method is use to create a reusable or single callable function </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1033,7 +1044,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_value_method -->
                   <div id="w_magic_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> magic(); | Type: function|method </h4>
+                     <h4 class="text-1xl font-bold"> magic(); | Type: function|method|hook </h4>
                      <span class="text-slate-700 text-sm">Defined: magic function or method is use to filter and replace a current value with the callback </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1106,7 +1117,10 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                        </div>
                     </div>
                   </div><!-- END of w_magic_method -->
-                  <!-- / end of methods -->
+                  <div id="w_hook_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                   <h4 class="text-1xl font-bold"> attr(); | Type: function|method|hook </h4>
+                  </div><!-- END of w_hook_method -->
+                  <!-- / of ATTR Hook-->
                   <!-- Reserve Keywords -->
                   <div id="w_attr_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
                      <h4 class="text-1xl font-bold"> Reserved Keywords </h4>
