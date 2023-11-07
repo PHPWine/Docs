@@ -61,7 +61,7 @@
                         <td>Components Class {...}</td>
                      </tr>
                      <tr class="tblheader w-self methods wine value magic">
-                        <th>Methods</th>
+                        <th>Method</th>
                      </tr>
                      <tr class="methods w-self wine">
                         <td>wine()</td>
@@ -815,39 +815,17 @@
                         - Inside the wine(); you can also create a child using predefined array child
                         and it's keyword "child" with this key you can create a descendant element like
                         div or any within the providers property inside the wine class, more than that
-                        you can do extend wine if you wish to create your own custom html tag. 
+                        you can do custom HTML tag just using wine. 
                        </p>
                      </div>
                        <p>
-                        - In order to use a value and magic methods you have to call the wine function,
-                        otherwise you will stored them in a variable then place within the wine as parameter or argument.
+                        - In order to use a value, attr and magic hooks you have to call the wine function.
                        </p>
                      </div>
-                     <div>
-                       <p>
-                     <strong>value</strong> <i>function|method</i> : Use to return content for a call back function.
-                     <strong>- value();</strong> is a string function that provide a callback for "value" reserved keyword
-                        when you working with the child array there is a reserved keyword "value" and "attr"
-                        with these keys you can add attributes in your array custom html and write the "value"
-                        you can return a any form of string value to have a content that child array element
-                        or you can use the value function to have a return call back that mostly do in main app
-                        files, with that value function you can extract the value you want to return in your
-                        child array key html 
-                      </p>
-                     </div>
-                     <div>
-                      <p>  
-                        <strong>magic</strong> <i>function|method</i> : Use to filter the current content and replace. 
-                        <strong>- magic();</strong> is exactly the same as value(); however the return argument is the current value,
-                        The magic function is use when you want to replace the current value of the html
-                        or the full app html, this magic function are mostly use in a session,
-                        for instance you have a different layout header when the user is login or active session
-                        else you have a default navigation once the user is logout.
-                        - you can also add magic if your client want to update the layout without touching the current
-                        structure so if ever the there's a change of mind you don't need to do it over and over again and you can
-                        restore back the default immediately because you use the magic for the temporary time for a new layout structure.
-                      </p>
-                     </div>
+                      
+                      <div>
+                        Hooks: value(); attr(); magic(); are also method.
+                      </div>
                     </div>
                   </div><!-- END of w_wine_method -->
                   <div id="w_wine_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
@@ -990,11 +968,56 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                   <!-- / end of methods -->
                   <!-- BEGIN ATTR Hook -->
                   <div id="w_hook" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> Hooks </h4>
+                     <h4 class="text-1xl font-bold"> Wine Hooks </h4>
+
+                     <div class="w-method grid gap-6">
+                        <h3 class="font-bold">PHPWine has predefined Hooks, these hooks are helpful for developer to minimize and lessen the workload, and it makes the structure simpler and effective. 
+                        </h3>
+        
+                     <div>
+                       <p>
+                     <strong>value</strong> <i>method|hook</i> : Use to return content for a call back function.
+                     <strong>- value();</strong> is a string function that provide a callback for "value" reserved keyword
+                        when you working with the child array there is a reserved keyword "value" and "attr"
+                        with these keys you can add attributes in your array custom html and write the "value"
+                        you can return a any form of string value to have a content that child array element
+                        or you can use the value() hook function to have a return call back that mostly do in main app
+                        files, with that value function you can extract the content you want to return in your
+                        child array key html
+                      </p>
+                     </div>
+                     <div>
+                      <p>  
+                        <strong>magic</strong> <i>method|hook</i> : Use to filter the current content and replace. 
+                        <strong>- magic();</strong> is exactly the same as value(); aside to the time of execution however the return 
+                        argument is the current value, The magic hook is use when you want to replace the current value of the html
+                        or the full app html, this magic hook method are mostly use in a session,
+                        for instance you have a different layout header when the user is login or active session
+                        else you have a default navigation once the user is logout.
+                        - you can also add magic if your client want to update the layout without touching the current
+                        structure so if ever the there's a change of mind you don't need to do it over and over again and you can
+                        restore back the default immediately because you use the magic for the temporary time for a new layout structure.
+                      </p>
+                     </div>
+
+                     <div>
+                        <p>  
+                          <strong>attr</strong> <i>method|hook</i> : Use to add or filter and replace the current attribute of your html. 
+                          <strong>- attr();</strong> is exactly the same as magic(); the same with the time of execution however the return 
+                          argument is the attribute, The attr hook is use when you want to replace the current attribute of the html, 
+                          this attr() hook method are mostly use in a doctrine,
+                          for instance you decided to develop or create a doctrine that exact match to your custom layout, with this hook
+                          you can use the doctrine as your parent template to have a reusable asset and replace the attributes 
+                          according to your project next section layout.
+                        </p>
+                      </div>
+
+                    </div>
+
                   </div><!-- END of w_hook -->
                   <div id="w_value_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> value(); | Type: function|method|hook </h4>
-                     <span class="text-slate-700 text-sm">Defined: value function or method is use to create a reusable or single callable function </span>
+                     <h4 class="text-1xl font-bold"> value(); | Type: method|hook </h4>
+                     <span class="text-slate-700 text-sm">Defined: value hook or method is use to create a reusable or single callable function </span>
                    <div class="w-method">
                        <div class="wine-code-page">
 <div class="text-slate-900 overflow-x-scroll">
@@ -1032,7 +1055,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
   <!-- BEGIN CODE EX -->
   <div class="wine-code-page">
      <div class="wine-doctrine">
-        <h4 class="text-1xl font-bold"> value method/function basic usage</h4>
+        <h4 class="text-1xl font-bold"> value method/hook basic usage</h4>
      </div>
   <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
   <pre><code><span class="text-green-600">/* value function|method */</span>
@@ -1051,7 +1074,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
         <h4 class="text-1xl font-bold"> value with in HTML </h4>
      </div>
   <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
-<pre><code><span class="text-green-600">/* value function in HTML  */</span>
+<pre><code><span class="text-green-600">/* value hook in HTML  */</span>
  return wine('section', [
 
   child => [
@@ -1067,8 +1090,8 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_value_method -->
                   <div id="w_magic_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> magic(); | Type: function|method|hook </h4>
-                     <span class="text-slate-700 text-sm">Defined: magic function or method is use to filter and replace a current value with the callback </span>
+                     <h4 class="text-1xl font-bold"> magic(); | Type: method|hook </h4>
+                     <span class="text-slate-700 text-sm">Defined: magic hook or method is use to filter and replace a current value with the callback </span>
                    <div class="w-method">
                        <div class="wine-code-page">
 <div class="text-slate-900 overflow-x-scroll">
@@ -1106,7 +1129,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
   <!-- BEGIN CODE EX -->
   <div class="wine-code-page">
      <div class="wine-doctrine">
-        <h4 class="text-1xl font-bold"> magic method/function basic usage </h4>
+        <h4 class="text-1xl font-bold"> magic method/hook basic usage </h4>
      </div>
   <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
   <pre><code><span class="text-green-600">/* magic can wait until the exact Date and Time you wish to call or invoke it */</span>
@@ -1140,9 +1163,69 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                        </div>
                     </div>
                   </div><!-- END of w_magic_method -->
-                  <div id="w_hook_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                   <h4 class="text-1xl font-bold"> attr(); | Type: function|method|hook </h4>
-                  </div><!-- END of w_hook_method -->
+                  <div id="w_attr_method" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
+                     <h4 class="text-1xl font-bold"> attr(); | Type: method|hook </h4>
+                     <span class="text-slate-700 text-sm">Defined: attr hook or method is use to add or filter and replace the current attribute of your html  </span>
+                   <div class="w-method">
+                       <div class="wine-code-page">
+<div class="text-slate-900 overflow-x-scroll">
+<pre><code>
+ attr( 
+   
+  object $class = null,
+  string|callable $call_back = null,
+  mixed ...$args 
+   
+ ); 
+</code></pre>
+</div>
+  
+  <div class="overflow-x-scroll">
+   <span class="text-slate-700 text-sm">Source: https://github.com/PHPWine/PHPWine/blob/main/src/OptimizedHtml.php</span>
+  </div>
+                 
+  <div class="w-full py-[1px] mt-6 bg-slate-900"></div>
+<div class="w-method-docx overflow-x-scroll">
+  <pre><code>
+  @param object $class  : < optional&nullable >
+  - This object is the class of method you are working with the call-back
+
+  @param string|callable| $call_back : < optional&nullable >
+  - Callable : It is in a form of string but actually name of your method or function 
+            ex. "my_call_back". 
+
+  @param mixed ...$args :  < optional&nullable >
+  - mixed: arguments data call back
+
+</pre></code>
+</div>
+  
+  <!-- BEGIN CODE EX -->
+  <div class="wine-code-page">
+     <div class="wine-doctrine">
+        <h4 class="text-1xl font-bold"> attr method/hook basic usage</h4>
+     </div>
+  <div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg my-3 p-4 overflow-x-scroll">
+  <pre><code><span class="text-green-600">/* attr hook|method */</span>
+   <span class="text-green-600">/* $this if you are within the class */</span> 
+   public function doctrine_method_name($session) {
+
+      return wine('section', [
+       child => [
+   
+          ['div', attr=> [ attr((new object),'filter_attr',[ <span class="text-green-600">/* current attributes */</span> ]) ]],
+        
+        ]
+      ]);
+    }
+  </code></pre>
+     </div>
+  </div>
+
+  <!-- END CODE Ex.-->
+                       </div>
+                    </div>
+                  </div><!-- END of w_value_method -->
                   <!-- / of ATTR Hook-->
                   <!-- Reserve Keywords -->
                   <div id="w_attr_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
@@ -1214,7 +1297,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_attr_rk -->
                   <div id="w_attr_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> attr | Type: constant </h4>
+                     <h4 class="text-1xl font-bold"> attr | Type: constant|ReservedKeyword </h4>
                      <span class="text-slate-700 text-sm">Defined: "attr" key use to add attribute in your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1259,7 +1342,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_attr_rk -->
                   <div id="w_child_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> child | Type: constant </h4>
+                     <h4 class="text-1xl font-bold"> child | Type: constant|ReservedKeyword </h4>
                      <span class="text-slate-700 text-sm">Defined: "child" key use to add array child element in your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1309,7 +1392,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_child_rk -->
                   <div id="w_value_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> value | Type: constant </h4>
+                     <h4 class="text-1xl font-bold"> value | Type: constant|ReservedKeyword </h4>
                      <span class="text-slate-700 text-sm">Defined: "value" key use to add content to your array child element in your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1354,7 +1437,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_value_rk -->
                   <div id="w__rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> __ | Type: constant </h4>
+                     <h4 class="text-1xl font-bold"> __ | Type: constant|ReservedKeyword </h4>
                      <span class="text-slate-700 text-sm">Defined: "__" (double underscore) or known as magic entity key use to removed parent element in wine your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1399,7 +1482,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w__rk -->
                   <div id="w_please_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> please | Type: constant </h4>
+                     <h4 class="text-1xl font-bold"> please | Type: constant|ReservedKeyword </h4>
                      <span class="text-slate-700 text-sm">Defined: "please" key use to add conidition or statement in your element in wine your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1443,7 +1526,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
        foreach([1,2,3] as $data ) {
 
        $dd[] = wine('div', $data);
-       <span class="text-green-600">/* $dd[] =  ['div',value => [$data] ,attr => [ classes => 'w-full'] ]; </span>
+       <span class="text-green-600">/* $dd[] =  ['div',value => [$data] ,attr => [ classes => 'w-full'] ]; */</span>
         
        } <span class="text-green-600">/* end of statement or condition */</span> 
       return $dd;
@@ -1460,7 +1543,7 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                     </div>
                   </div><!-- END of w_please_rk -->
                   <div id="w_try_rk" class="w-wine-method  p-4 rounded-lg wine-codes overflow-x-scroll">
-                     <h4 class="text-1xl font-bold"> "try" | Type: string </h4>
+                     <h4 class="text-1xl font-bold"> "try" | Type: string|ReservedKeyword </h4>
                      <span class="text-slate-700 text-sm">Defined: "try" key use to add conidition or statement in your element in wine your html inside in php file </span>
                    <div class="w-method">
                        <div class="wine-code-page">
@@ -1494,24 +1577,32 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
   <span class="text-green-600">/* create condition before each child array */</span> 
   print wine(__, [ 
         
-    child => [ 
-    
-    ['div', value => [ "try" => function() {
+  child => [ 
+  
+  ['div', value => [ "try" => function() {
 
-      $dd   = [];
-      $dd[] = wine('h1', 'Hello!' );  <span class="text-green-600">/* only wine or child array element works */</span> 
-      <span class="text-green-600">/* $dd[] = ['h1',  value => ['Hello World'] ];  if you use array child remove wine(); */</span> 
-       foreach([1,2,3] as $data ) {
+    $new = new class () extends \AppNameSpace\ClassName {
 
-       $dd[] = wine('div', $data);
-       <span class="text-green-600">/* $dd[] =  ['div',value => [$data] ,attr => [ classes => 'w-full'] ]; */ </span>
-        
-       } <span class="text-green-600">/* end of statement or condition */</span> 
-      return $dd;
-     }  <span class="text-green-600">/* end of please */</span> 
-   ]]
-   
- ]]);
+      public function my_value_in_array() {
+        return "Coffee";
+      }
+
+      public function my_filter() {
+        return "No sugar!";
+      }
+
+    };
+
+    return [
+      
+      ['div', value => [value($new,'my_value_in_array')]],
+      ['div', value => [magic($new,'my_filter',value($new,'my_value_in_array'))]]
+  
+    ];
+
+  }]]
+ 
+]]);
   </code></pre>
      </div>
   </div>
