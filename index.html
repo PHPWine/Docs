@@ -995,8 +995,9 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                         for instance you have a different layout header when the user is login or active session
                         else you have a default navigation once the user is logout.
                         - you can also add magic if your client want to update the layout without touching the current
-                        structure so if ever the there's a change of mind you don't need to do it over and over again and you can
-                        restore back the default immediately because you use the magic for the temporary time for a new layout structure.
+                        structure so if ever there's a change of mind you don't need to do it over and over again and you can
+                        restore back the default immediately because you using magic hook for the temporary of time you are working
+                        with the new layout structure.
                       </p>
                      </div>
 
@@ -1004,8 +1005,8 @@ print wine('div','Hello World',[classes=>"one my-class" id=>"my_id"], true ); <s
                         <p>  
                           <strong>attr</strong> <i>method|hook</i> : Use to add or filter and replace the current attribute of your html. 
                           <strong>- attr();</strong> is exactly the same as magic(); the same with the time of execution however the return 
-                          argument is the attribute, The attr hook is use when you want to replace the current attribute of the html, 
-                          this attr() hook method are mostly use in a doctrine,
+                          argument is the current attribute, The attr hook is use when you want to replace the current attribute in the html, 
+                          this attr() hook method are mostly use in a doctrine class php file,
                           for instance you decided to develop or create a doctrine that exact match to your custom layout, with this hook
                           you can use the doctrine as your parent template to have a reusable asset and replace the attributes 
                           according to your project next section layout.
