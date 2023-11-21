@@ -789,13 +789,57 @@
  < html lang="en">
  < body>
    ...
- < ?php wine_doctrine_init(); ?>  
+ < ?php <span class="text-green-600">
+ /**
+ * --------------------------------------------------------------------------------------------
+ * @class 
+ * @hide_those
+ * @source: project/Components\HomePageThose.php
+ * -------------------------------------------------------------------------------------------- 
+ * DT: 11.17.2023 **/ </span>
+ $those_boxes = new \PHPWineShowcase\Components\HomePageThose;
+ 
+  wine_doctrine_init(); ?>  
  < /body>
  < /html>  
 </code>
 </pre>
 </div>
-                       </div>
+
+<div class="wine-codes bg-slate-800 text-yellow-100 rounded-lg overflow-x-scroll">
+<pre>
+<code>
+ < ?php 
+ <span class="text-green-600"> 
+ /* Instead of using doctrine selecting 1 by 1 you can use those
+ propery and select the class to select those */
+ </span>
+  namespace PHPWineShowcase\Components;
+
+  use \PHPWineOptimizedHtml\Doctrine\Doctrine;
+
+  class HomePageThose {
+
+  public function __construct()
+  {
+
+  // Hide the mobile
+  $page_box =  new Doctrine([
+   those => '.hide-m'  
+  ]);  
+
+  print $page_box->visible([
+   'sm_mobile' => false 
+  ])->screen([
+   'sm_mobile' => 540 
+  ])->layout();
+
+ ...
+  }
+ } 
+ </code></pre>
+ </div>
+</div>
                        <!-- / END of code -->
 
                      </div>
